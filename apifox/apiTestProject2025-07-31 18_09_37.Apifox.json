@@ -1,0 +1,4017 @@
+{
+  "apifoxProject": "1.0.0",
+  "$schema": {
+    "app": "apifox",
+    "type": "project",
+    "version": "1.2.0"
+  },
+  "info": {
+    "name": "apiTestProject2025-07-31 18:09:37",
+    "description": "",
+    "mockRule": {
+      "rules": [],
+      "enableSystemRule": true
+    }
+  },
+  "apiCollection": [
+    {
+      "name": "Root",
+      "id": 63015510,
+      "auth": {
+        "type": "securityscheme"
+      },
+      "securityScheme": {
+        "required": true,
+        "schemeGroups": [
+          {
+            "id": "Y2erYwc7rAtoVUzVroot1",
+            "schemeIds": [
+              414483
+            ]
+          },
+          {
+            "id": "KES73xyZ46XYM9Jlroot2",
+            "schemeIds": [
+              414484
+            ]
+          }
+        ],
+        "use": {
+          "id": "KES73xyZ46XYM9Jlroot2",
+          "configs": {
+            "414484": {
+              "authConfigs": {
+                "x-apifox": {
+                  "value": "defaultValueFromRoot"
+                }
+              }
+            }
+          }
+        },
+        "scopes": {}
+      },
+      "parentId": 0,
+      "serverId": "",
+      "description": "",
+      "identityPattern": {
+        "httpApi": {
+          "type": "methodAndPath",
+          "bodyType": "",
+          "fields": []
+        }
+      },
+      "shareSettings": {},
+      "visibility": "SHARED",
+      "moduleId": 5917663,
+      "preProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "postProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "inheritPostProcessors": {},
+      "inheritPreProcessors": {},
+      "items": [
+        {
+          "name": "F1_inheritRoot",
+          "id": 63015515,
+          "auth": {},
+          "securityScheme": {},
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 5917663,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "F1_childF1",
+              "id": 63015516,
+              "auth": {},
+              "securityScheme": {},
+              "parentId": 63015515,
+              "serverId": "",
+              "description": "",
+              "identityPattern": {
+                "httpApi": {
+                  "type": "inherit",
+                  "bodyType": "",
+                  "fields": []
+                }
+              },
+              "shareSettings": {},
+              "visibility": "INHERITED",
+              "moduleId": 5917663,
+              "preProcessors": [
+                {
+                  "id": "inheritProcessors",
+                  "type": "inheritProcessors",
+                  "data": {}
+                }
+              ],
+              "postProcessors": [
+                {
+                  "id": "inheritProcessors",
+                  "type": "inheritProcessors",
+                  "data": {}
+                }
+              ],
+              "inheritPostProcessors": {},
+              "inheritPreProcessors": {},
+              "items": [
+                {
+                  "name": "F1_grandsonA1_multiple inherite",
+                  "api": {
+                    "id": "329840924",
+                    "method": "get",
+                    "path": "/F1/grandsonA1",
+                    "parameters": {
+                      "query": [],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "responses": [
+                      {
+                        "id": "734449352",
+                        "code": 200,
+                        "name": "response1",
+                        "headers": [],
+                        "jsonSchema": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "title": "username",
+                              "description": "field desc"
+                            },
+                            "id": {
+                              "type": "string"
+                            }
+                          },
+                          "x-apifox-orders": [
+                            "name",
+                            "id"
+                          ],
+                          "required": [
+                            "name",
+                            "id"
+                          ]
+                        },
+                        "description": "",
+                        "contentType": "json",
+                        "mediaType": "",
+                        "oasExtensions": ""
+                      }
+                    ],
+                    "responseExamples": [],
+                    "requestBody": {
+                      "type": "none",
+                      "parameters": [],
+                      "mediaType": "",
+                      "examples": [],
+                      "oasExtensions": ""
+                    },
+                    "description": "apidesc",
+                    "tags": [
+                      "testcreate"
+                    ],
+                    "status": "developing",
+                    "serverId": "",
+                    "operationId": "",
+                    "sourceUrl": "",
+                    "ordering": 10,
+                    "cases": [],
+                    "mocks": [],
+                    "customApiFields": "{}",
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "mockScript": {},
+                    "codeSamples": [],
+                    "commonResponseStatus": {},
+                    "responseChildren": [],
+                    "visibility": "INHERITED",
+                    "moduleId": 5917663,
+                    "oasExtensions": "",
+                    "type": "http",
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                },
+                {
+                  "name": "F1_grandsonA2_self defined",
+                  "api": {
+                    "id": "329840925",
+                    "method": "get",
+                    "path": "/F1/grandsonA2",
+                    "parameters": {
+                      "query": [],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "auth": {
+                      "type": "securityscheme"
+                    },
+                    "securityScheme": {
+                      "required": true,
+                      "schemeGroups": [
+                        {
+                          "id": "7B5q_zPYpiksBv2rzF1A2",
+                          "schemeIds": [
+                            414488
+                          ]
+                        }
+                      ],
+                      "use": {
+                        "id": "7B5q_zPYpiksBv2rzF1A2",
+                        "configs": {
+                          "414488": {
+                            "authConfigs": {
+                              "x-apifox": {
+                                "value": "defaultValueFromApi"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "responses": [
+                      {
+                        "id": "734462046",
+                        "code": 200,
+                        "name": "response1",
+                        "headers": [],
+                        "jsonSchema": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "title": "username",
+                              "description": "field desc"
+                            },
+                            "id": {
+                              "type": "string"
+                            }
+                          },
+                          "x-apifox-orders": [
+                            "name",
+                            "id"
+                          ],
+                          "required": [
+                            "name",
+                            "id"
+                          ]
+                        },
+                        "description": "",
+                        "contentType": "json",
+                        "mediaType": "",
+                        "oasExtensions": ""
+                      }
+                    ],
+                    "responseExamples": [],
+                    "requestBody": {
+                      "type": "none",
+                      "parameters": [],
+                      "mediaType": "",
+                      "examples": [],
+                      "oasExtensions": ""
+                    },
+                    "description": "apidesc",
+                    "tags": [
+                      "testcreate"
+                    ],
+                    "status": "developing",
+                    "serverId": "",
+                    "operationId": "",
+                    "sourceUrl": "",
+                    "ordering": 20,
+                    "cases": [],
+                    "mocks": [],
+                    "customApiFields": "{}",
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "mockScript": {},
+                    "codeSamples": [],
+                    "commonResponseStatus": {},
+                    "responseChildren": [],
+                    "visibility": "INHERITED",
+                    "moduleId": 5917663,
+                    "oasExtensions": "",
+                    "type": "http",
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "F2_ref  one auth",
+          "id": 63015517,
+          "auth": {
+            "type": "securityscheme"
+          },
+          "securityScheme": {
+            "required": true,
+            "schemeGroups": [
+              {
+                "id": "7B5q_zPYpiksBv2rzsHF2",
+                "schemeIds": [
+                  414485
+                ]
+              }
+            ],
+            "use": {
+              "id": "7B5q_zPYpiksBv2rzsHF2",
+              "configs": {
+                "414485": {
+                  "authConfigs": {
+                    "x-apifox": {
+                      "value": "defaultValueFromFolder"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 5917663,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "F2_childF1",
+              "id": 63015518,
+              "auth": {},
+              "securityScheme": {},
+              "parentId": 63015517,
+              "serverId": "",
+              "description": "",
+              "identityPattern": {
+                "httpApi": {
+                  "type": "inherit",
+                  "bodyType": "",
+                  "fields": []
+                }
+              },
+              "shareSettings": {},
+              "visibility": "INHERITED",
+              "moduleId": 5917663,
+              "preProcessors": [
+                {
+                  "id": "inheritProcessors",
+                  "type": "inheritProcessors",
+                  "data": {}
+                }
+              ],
+              "postProcessors": [
+                {
+                  "id": "inheritProcessors",
+                  "type": "inheritProcessors",
+                  "data": {}
+                }
+              ],
+              "inheritPostProcessors": {},
+              "inheritPreProcessors": {},
+              "items": [
+                {
+                  "name": "F2_grandsonA1_multiple inherite",
+                  "api": {
+                    "id": "329840927",
+                    "method": "get",
+                    "path": "/F2/grandsonA1",
+                    "parameters": {
+                      "query": [],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "auth": {},
+                    "securityScheme": {},
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "responses": [
+                      {
+                        "id": "734449146",
+                        "code": 200,
+                        "name": "response1",
+                        "headers": [],
+                        "jsonSchema": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "title": "username",
+                              "description": "field desc"
+                            },
+                            "id": {
+                              "type": "string"
+                            }
+                          },
+                          "x-apifox-orders": [
+                            "name",
+                            "id"
+                          ],
+                          "required": [
+                            "name",
+                            "id"
+                          ]
+                        },
+                        "description": "",
+                        "contentType": "json",
+                        "mediaType": "",
+                        "oasExtensions": ""
+                      }
+                    ],
+                    "responseExamples": [],
+                    "requestBody": {
+                      "type": "none",
+                      "parameters": [],
+                      "mediaType": "",
+                      "examples": [],
+                      "oasExtensions": ""
+                    },
+                    "description": "apidesc",
+                    "tags": [
+                      "testcreate"
+                    ],
+                    "status": "developing",
+                    "serverId": "",
+                    "operationId": "",
+                    "sourceUrl": "",
+                    "ordering": 10,
+                    "cases": [],
+                    "mocks": [],
+                    "customApiFields": "{}",
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "mockScript": {},
+                    "codeSamples": [],
+                    "commonResponseStatus": {},
+                    "responseChildren": [],
+                    "visibility": "INHERITED",
+                    "moduleId": 5917663,
+                    "oasExtensions": "",
+                    "type": "http",
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                },
+                {
+                  "name": "F2_grandsonA2_self defined",
+                  "api": {
+                    "id": "329840929",
+                    "method": "get",
+                    "path": "/F2/grandsonA2",
+                    "parameters": {
+                      "query": [],
+                      "path": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "auth": {
+                      "type": "securityscheme"
+                    },
+                    "securityScheme": {
+                      "required": true,
+                      "schemeGroups": [
+                        {
+                          "id": "7B5q_zPYpiksBv2rzF2A2",
+                          "schemeIds": [
+                            414488
+                          ]
+                        }
+                      ],
+                      "use": {
+                        "id": "7B5q_zPYpiksBv2rzF2A2",
+                        "configs": {
+                          "414488": {
+                            "authConfigs": {
+                              "x-apifox": {
+                                "value": "default"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "commonParameters": {
+                      "query": [],
+                      "body": [],
+                      "cookie": [],
+                      "header": []
+                    },
+                    "responses": [
+                      {
+                        "id": "734462047",
+                        "code": 200,
+                        "name": "response1",
+                        "headers": [],
+                        "jsonSchema": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string",
+                              "title": "username",
+                              "description": "field desc"
+                            },
+                            "id": {
+                              "type": "string"
+                            }
+                          },
+                          "x-apifox-orders": [
+                            "name",
+                            "id"
+                          ],
+                          "required": [
+                            "name",
+                            "id"
+                          ]
+                        },
+                        "description": "",
+                        "contentType": "json",
+                        "mediaType": "",
+                        "oasExtensions": ""
+                      }
+                    ],
+                    "responseExamples": [],
+                    "requestBody": {
+                      "type": "none",
+                      "parameters": [],
+                      "mediaType": "",
+                      "examples": [],
+                      "oasExtensions": ""
+                    },
+                    "description": "apidesc",
+                    "tags": [
+                      "testcreate"
+                    ],
+                    "status": "developing",
+                    "serverId": "",
+                    "operationId": "",
+                    "sourceUrl": "",
+                    "ordering": 20,
+                    "cases": [],
+                    "mocks": [],
+                    "customApiFields": "{}",
+                    "advancedSettings": {
+                      "disabledSystemHeaders": {}
+                    },
+                    "mockScript": {},
+                    "codeSamples": [],
+                    "commonResponseStatus": {},
+                    "responseChildren": [],
+                    "visibility": "INHERITED",
+                    "moduleId": 5917663,
+                    "oasExtensions": "",
+                    "type": "http",
+                    "preProcessors": [],
+                    "postProcessors": [],
+                    "inheritPostProcessors": {},
+                    "inheritPreProcessors": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "F3_ref 2 auth_required",
+          "id": 63015519,
+          "auth": {
+            "type": "securityscheme"
+          },
+          "securityScheme": {
+            "required": true,
+            "schemeGroups": [
+              {
+                "id": "7B5q_zPYpiksBv2rzF301",
+                "schemeIds": [
+                  414485
+                ]
+              },
+              {
+                "id": "7B5q_zPYpiksBv2rzF302",
+                "schemeIds": [
+                  414486
+                ]
+              }
+            ],
+            "use": {
+              "id": "7B5q_zPYpiksBv2rzF302",
+              "configs": {
+                "414486": {
+                  "authConfigs": {
+                    "x-apifox": {
+                      "value": "defaultValueFromFolder"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 5917663,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "F3_childA1_multiple inherite",
+              "api": {
+                "id": "329840931",
+                "method": "get",
+                "path": "/F3/childA1",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734441225",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [
+                  "testcreate"
+                ],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 10,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            }
+          ]
+        },
+        {
+          "name": "F4_ref 2 auth_unRequired",
+          "id": 63015520,
+          "auth": {
+            "type": "securityscheme"
+          },
+          "securityScheme": {
+            "required": false,
+            "schemeGroups": [
+              {
+                "id": "7B5q_zPYpiksBv2rzF401",
+                "schemeIds": [
+                  414485
+                ]
+              },
+              {
+                "id": "7B5q_zPYpiksBv2rzF402",
+                "schemeIds": [
+                  414486
+                ]
+              }
+            ],
+            "use": {
+              "id": 0,
+              "configs": {}
+            }
+          },
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 5917663,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "F4_childA1_multiple inherite",
+              "api": {
+                "id": "329840933",
+                "method": "get",
+                "path": "/F4/childA1",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {},
+                "securityScheme": {},
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734439121",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [
+                  "testcreate"
+                ],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 10,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            }
+          ]
+        },
+        {
+          "name": "Apis ref different Auth",
+          "id": 63015521,
+          "auth": {},
+          "securityScheme": {},
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "shareSettings": {},
+          "visibility": "INHERITED",
+          "moduleId": 5917663,
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "ApiRefAuth_secureSchema_APIKey_header",
+              "api": {
+                "id": "329840934",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_APIKey_header",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1001",
+                      "schemeIds": [
+                        414495
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1001",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734455052",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 10,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_APIKey_query",
+              "api": {
+                "id": "329840935",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_APIKey_query",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1002",
+                      "schemeIds": [
+                        414496
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1002",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734463688",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 20,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_BearerToken",
+              "api": {
+                "id": "329840937",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_BearerToken",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1003",
+                      "schemeIds": [
+                        414497
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1003",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734445364",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 30,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_JWTHeader",
+              "api": {
+                "id": "329840938",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_JWTHeader",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1004",
+                      "schemeIds": [
+                        414498
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1004",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734443067",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 40,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_JWTQuery",
+              "api": {
+                "id": "329840939",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_JWTQuery",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1005",
+                      "schemeIds": [
+                        414499
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1005",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734445068",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 50,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_BasicAuth",
+              "api": {
+                "id": "329840941",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_BasicAuth",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1006",
+                      "schemeIds": [
+                        414500
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1006",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734449198",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 60,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_DigestAuth",
+              "api": {
+                "id": "329840942",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_DigestAuth",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1007",
+                      "schemeIds": [
+                        414501
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1007",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734439122",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 70,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_Oauth1.0_body",
+              "api": {
+                "id": "329840944",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_Oauth1.0_body",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1008",
+                      "schemeIds": [
+                        414502
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1008",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734456093",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 80,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_HAWK",
+              "api": {
+                "id": "329840945",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_HAWK",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1009",
+                      "schemeIds": [
+                        414504
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1009",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734463689",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 90,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_AWS",
+              "api": {
+                "id": "329840947",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_AWS",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1010",
+                      "schemeIds": [
+                        414505
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1010",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734455149",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 100,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_kerberos",
+              "api": {
+                "id": "329840948",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_kerberos",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1011",
+                      "schemeIds": [
+                        414506
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1011",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734449147",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 110,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_NTLM",
+              "api": {
+                "id": "329840951",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_NTLM",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1012",
+                      "schemeIds": [
+                        414507
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1012",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734439123",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 120,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_Akamai",
+              "api": {
+                "id": "329840952",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_Akamai",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1013",
+                      "schemeIds": [
+                        414508
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1013",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734463738",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 130,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_Oauth2_authorizationCode",
+              "api": {
+                "id": "329840953",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_Oauth2_authorizationCode",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1014",
+                      "schemeIds": [
+                        414509
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1014",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734465386",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 140,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_Oauth2_clientCredentials",
+              "api": {
+                "id": "329840954",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_Oauth2_clientCredentials",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1015",
+                      "schemeIds": [
+                        414510
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1015",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734445820",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 150,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_Oauth2_implicit",
+              "api": {
+                "id": "329840955",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_Oauth2_implicit",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1016",
+                      "schemeIds": [
+                        414511
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1016",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734443068",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 160,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_Oauth2_password",
+              "api": {
+                "id": "329840956",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_Oauth2_password",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1017",
+                      "schemeIds": [
+                        414512
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1017",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734454851",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 170,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "ApiRefAuth_secureSchema_customType",
+              "api": {
+                "id": "329840957",
+                "method": "get",
+                "path": "/ApiRefAuth/secureSchema_customType",
+                "parameters": {
+                  "query": [],
+                  "path": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {
+                  "type": "securityscheme"
+                },
+                "securityScheme": {
+                  "schemeGroups": [
+                    {
+                      "id": "sNXgLKw8fY_agRuxx1018",
+                      "schemeIds": [
+                        414513
+                      ]
+                    }
+                  ],
+                  "required": true,
+                  "use": {
+                    "id": "sNXgLKw8fY_agRuxx1018",
+                    "configs": {}
+                  }
+                },
+                "commonParameters": {
+                  "query": [],
+                  "body": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "responses": [
+                  {
+                    "id": "734439972",
+                    "code": 200,
+                    "name": "response1",
+                    "headers": [],
+                    "jsonSchema": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string",
+                          "title": "username",
+                          "description": "field desc"
+                        },
+                        "id": {
+                          "type": "string"
+                        }
+                      },
+                      "x-apifox-orders": [
+                        "name",
+                        "id"
+                      ],
+                      "required": [
+                        "name",
+                        "id"
+                      ]
+                    },
+                    "description": "",
+                    "contentType": "json",
+                    "mediaType": "",
+                    "oasExtensions": ""
+                  }
+                ],
+                "responseExamples": [],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": [],
+                  "mediaType": "",
+                  "examples": [],
+                  "oasExtensions": ""
+                },
+                "description": "apidesc",
+                "tags": [],
+                "status": "developing",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 180,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {
+                  "disabledSystemHeaders": {}
+                },
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "visibility": "INHERITED",
+                "moduleId": 5917663,
+                "oasExtensions": "",
+                "type": "http",
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            }
+          ]
+        },
+        {
+          "name": "A1_inheriteRoot",
+          "api": {
+            "id": "329840918",
+            "method": "get",
+            "path": "/A1",
+            "parameters": {
+              "query": [],
+              "path": [],
+              "cookie": [],
+              "header": []
+            },
+            "auth": {},
+            "securityScheme": {},
+            "commonParameters": {
+              "query": [],
+              "body": [],
+              "cookie": [],
+              "header": []
+            },
+            "responses": [
+              {
+                "id": "734449197",
+                "code": 200,
+                "name": "response1",
+                "headers": [],
+                "jsonSchema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "username",
+                      "description": "field desc"
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "x-apifox-orders": [
+                    "name",
+                    "id"
+                  ],
+                  "required": [
+                    "name",
+                    "id"
+                  ]
+                },
+                "description": "",
+                "contentType": "json",
+                "mediaType": "",
+                "oasExtensions": ""
+              }
+            ],
+            "responseExamples": [],
+            "requestBody": {
+              "type": "none",
+              "parameters": [],
+              "mediaType": "",
+              "examples": [],
+              "oasExtensions": ""
+            },
+            "description": "apidesc",
+            "tags": [
+              "testcreate"
+            ],
+            "status": "developing",
+            "serverId": "",
+            "operationId": "",
+            "sourceUrl": "",
+            "ordering": 10,
+            "cases": [],
+            "mocks": [],
+            "customApiFields": "{}",
+            "advancedSettings": {
+              "disabledSystemHeaders": {}
+            },
+            "mockScript": {},
+            "codeSamples": [],
+            "commonResponseStatus": {},
+            "responseChildren": [],
+            "visibility": "INHERITED",
+            "moduleId": 5917663,
+            "oasExtensions": "",
+            "type": "http",
+            "preProcessors": [],
+            "postProcessors": [],
+            "inheritPostProcessors": {},
+            "inheritPreProcessors": {}
+          }
+        },
+        {
+          "name": "A2_ref schema",
+          "api": {
+            "id": "329840920",
+            "method": "get",
+            "path": "/A2",
+            "parameters": {
+              "query": [],
+              "path": [],
+              "cookie": [],
+              "header": []
+            },
+            "auth": {
+              "type": "securityscheme"
+            },
+            "securityScheme": {
+              "required": true,
+              "schemeGroups": [
+                {
+                  "id": "7B5q_zPYpiksBv2rzsHA2",
+                  "schemeIds": [
+                    414487
+                  ]
+                }
+              ],
+              "use": {
+                "id": "7B5q_zPYpiksBv2rzsHA2",
+                "configs": {
+                  "414487": {
+                    "authConfigs": {
+                      "x-apifox": {
+                        "value": "defaultdefaultValueFromApi"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "commonParameters": {
+              "query": [],
+              "body": [],
+              "cookie": [],
+              "header": []
+            },
+            "responses": [
+              {
+                "id": "734445704",
+                "code": 200,
+                "name": "response1",
+                "headers": [],
+                "jsonSchema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "username",
+                      "description": "field desc"
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "x-apifox-orders": [
+                    "name",
+                    "id"
+                  ],
+                  "required": [
+                    "name",
+                    "id"
+                  ]
+                },
+                "description": "",
+                "contentType": "json",
+                "mediaType": "",
+                "oasExtensions": ""
+              }
+            ],
+            "responseExamples": [],
+            "requestBody": {
+              "type": "none",
+              "parameters": [],
+              "mediaType": "",
+              "examples": [],
+              "oasExtensions": ""
+            },
+            "description": "apidesc",
+            "tags": [
+              "testcreate"
+            ],
+            "status": "developing",
+            "serverId": "",
+            "operationId": "",
+            "sourceUrl": "",
+            "ordering": 20,
+            "cases": [],
+            "mocks": [],
+            "customApiFields": "{}",
+            "advancedSettings": {
+              "disabledSystemHeaders": {}
+            },
+            "mockScript": {},
+            "codeSamples": [],
+            "commonResponseStatus": {},
+            "responseChildren": [],
+            "visibility": "INHERITED",
+            "moduleId": 5917663,
+            "oasExtensions": "",
+            "type": "http",
+            "preProcessors": [],
+            "postProcessors": [],
+            "inheritPostProcessors": {},
+            "inheritPreProcessors": {}
+          }
+        },
+        {
+          "name": "A3_ref twice scheme",
+          "api": {
+            "id": "329840921",
+            "method": "get",
+            "path": "/A3",
+            "parameters": {
+              "query": [],
+              "path": [],
+              "cookie": [],
+              "header": []
+            },
+            "auth": {
+              "type": "securityscheme"
+            },
+            "securityScheme": {
+              "required": false,
+              "schemeGroups": [
+                {
+                  "id": "7B5q_zPYpiksBv2rzA301",
+                  "schemeIds": [
+                    414487
+                  ]
+                },
+                {
+                  "id": "7B5q_zPYpiksBv2rzA302",
+                  "schemeIds": [
+                    414487
+                  ]
+                },
+                {
+                  "id": "7B5q_zPYpiksBv2rzA303",
+                  "schemeIds": [
+                    414491
+                  ]
+                },
+                {
+                  "id": "7B5q_zPYpiksBv2rzA304",
+                  "schemeIds": [
+                    414490
+                  ]
+                }
+              ],
+              "use": {
+                "id": 0,
+                "configs": {}
+              }
+            },
+            "commonParameters": {
+              "query": [],
+              "body": [],
+              "cookie": [],
+              "header": []
+            },
+            "responses": [
+              {
+                "id": "734455148",
+                "code": 200,
+                "name": "response1",
+                "headers": [],
+                "jsonSchema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "username",
+                      "description": "field desc"
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "x-apifox-orders": [
+                    "name",
+                    "id"
+                  ],
+                  "required": [
+                    "name",
+                    "id"
+                  ]
+                },
+                "description": "",
+                "contentType": "json",
+                "mediaType": "",
+                "oasExtensions": ""
+              }
+            ],
+            "responseExamples": [],
+            "requestBody": {
+              "type": "none",
+              "parameters": [],
+              "mediaType": "",
+              "examples": [],
+              "oasExtensions": ""
+            },
+            "description": "apidesc",
+            "tags": [
+              "testcreate"
+            ],
+            "status": "developing",
+            "serverId": "",
+            "operationId": "",
+            "sourceUrl": "",
+            "ordering": 30,
+            "cases": [],
+            "mocks": [],
+            "customApiFields": "{}",
+            "advancedSettings": {
+              "disabledSystemHeaders": {}
+            },
+            "mockScript": {},
+            "codeSamples": [],
+            "commonResponseStatus": {},
+            "responseChildren": [],
+            "visibility": "INHERITED",
+            "moduleId": 5917663,
+            "oasExtensions": "",
+            "type": "http",
+            "preProcessors": [],
+            "postProcessors": [],
+            "inheritPostProcessors": {},
+            "inheritPreProcessors": {}
+          }
+        },
+        {
+          "name": "A4_ref schema&OAS",
+          "api": {
+            "id": "329840922",
+            "method": "get",
+            "path": "/A4",
+            "parameters": {
+              "query": [],
+              "path": [],
+              "cookie": [],
+              "header": []
+            },
+            "auth": {
+              "type": "securityscheme"
+            },
+            "securityScheme": {
+              "required": true,
+              "schemeGroups": [
+                {
+                  "id": "7B5q_zPYpiksBv2rzsHA2",
+                  "schemeIds": [
+                    414487
+                  ]
+                }
+              ],
+              "use": {
+                "id": "7B5q_zPYpiksBv2rzsHA2",
+                "configs": {
+                  "414487": {
+                    "authConfigs": {
+                      "x-apifox": {
+                        "value": "defaultdefaultValueFromApi"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "commonParameters": {
+              "query": [],
+              "body": [],
+              "cookie": [],
+              "header": []
+            },
+            "responses": [
+              {
+                "id": "734454850",
+                "code": 200,
+                "name": "response1",
+                "headers": [],
+                "jsonSchema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "username",
+                      "description": "field desc"
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "x-apifox-orders": [
+                    "name",
+                    "id"
+                  ],
+                  "required": [
+                    "name",
+                    "id"
+                  ]
+                },
+                "description": "",
+                "contentType": "json",
+                "mediaType": "",
+                "oasExtensions": ""
+              }
+            ],
+            "responseExamples": [],
+            "requestBody": {
+              "type": "none",
+              "parameters": [],
+              "mediaType": "",
+              "examples": [],
+              "oasExtensions": ""
+            },
+            "description": "apidesc",
+            "tags": [
+              "testcreate"
+            ],
+            "status": "developing",
+            "serverId": "",
+            "operationId": "",
+            "sourceUrl": "",
+            "ordering": 40,
+            "cases": [],
+            "mocks": [],
+            "customApiFields": "{}",
+            "advancedSettings": {
+              "disabledSystemHeaders": {}
+            },
+            "mockScript": {},
+            "codeSamples": [],
+            "commonResponseStatus": {},
+            "responseChildren": [],
+            "visibility": "INHERITED",
+            "moduleId": 5917663,
+            "oasExtensions": "{  \"security\": \"OAS in api\"}",
+            "type": "http",
+            "preProcessors": [],
+            "postProcessors": [],
+            "inheritPostProcessors": {},
+            "inheritPreProcessors": {}
+          }
+        }
+      ]
+    }
+  ],
+  "socketCollection": [],
+  "docCollection": [],
+  "webSocketCollection": [],
+  "socketIOCollection": [],
+  "responseCollection": [
+    {
+      "_databaseId": 7183266,
+      "updatedAt": "2025-07-31T10:09:38.000Z",
+      "name": "Root",
+      "type": "root",
+      "children": [],
+      "moduleId": 5917663,
+      "parentId": 0,
+      "id": 7183266,
+      "ordering": [],
+      "items": []
+    }
+  ],
+  "schemaCollection": [
+    {
+      "id": 15699098,
+      "name": "Root",
+      "visibility": "SHARED",
+      "moduleId": 5917663,
+      "items": [],
+      "ordering": []
+    }
+  ],
+  "securitySchemeCollection": [
+    {
+      "id": 1716215,
+      "name": "Root",
+      "items": [
+        {
+          "id": 1716445,
+          "name": "All kinds of schemes",
+          "items": [
+            {
+              "id": 1716596,
+              "name": "FF1",
+              "items": [
+                {
+                  "id": 1715967,
+                  "name": "FFF1",
+                  "items": [
+                    {
+                      "id": 1716216,
+                      "name": "FFFF1",
+                      "items": []
+                    },
+                    {
+                      "id": 414494,
+                      "name": "secureSchema_multipleFolder",
+                      "authType": "apikey",
+                      "oasAuthType": "apiKey",
+                      "authConfigs": {
+                        "type": "apiKey",
+                        "in": "header",
+                        "name": "secureSchema_APIKey_header"
+                      },
+                      "guidanceConfigs": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": 414495,
+              "name": "secureSchema_APIKey_header",
+              "authType": "apikey",
+              "oasAuthType": "apiKey",
+              "authConfigs": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "secureSchema_APIKey_header"
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414496,
+              "name": "secureSchema_APIKey_query",
+              "authType": "apikey",
+              "oasAuthType": "apiKey",
+              "authConfigs": {
+                "type": "apiKey",
+                "in": "query",
+                "name": "secureSchema_APIKey_query"
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414497,
+              "name": "secureSchema_BearerToken",
+              "authType": "bearer",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "type": "http",
+                "scheme": "bearer"
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414498,
+              "name": "secureSchema_JWTHeader",
+              "authType": "jwt",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "type": "http",
+                "x-apifox": {
+                  "addTokenTo": "header",
+                  "algorithm": "HS384",
+                  "headerPrefix": "prefix"
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414499,
+              "name": "secureSchema_JWTQuery",
+              "authType": "jwt",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "type": "http",
+                "x-apifox": {
+                  "addTokenTo": "query",
+                  "algorithm": "HS384",
+                  "headerPrefix": "prefix"
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414500,
+              "name": "secureSchema_BasicAuth",
+              "authType": "basic",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "type": "http",
+                "scheme": "basic"
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414501,
+              "name": "secureSchema_DigestAuth",
+              "authType": "digest",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "type": "http",
+                "scheme": "digest",
+                "x-apifox": {
+                  "algorithm": "SHA-256"
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414502,
+              "name": "secureSchema_Oauth1.0_body",
+              "authType": "oauth1",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "type": "http",
+                "scheme": "oauth",
+                "x-apifox": {
+                  "in": "body",
+                  "signatureMethod": "HMAC-SHA1",
+                  "consumerKey": "{{key}}",
+                  "consumerSecret": "{{secret}}",
+                  "includeBodyHash": true,
+                  "addEmptyParamsToSign": true
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414503,
+              "name": "secureSchema_Oauth1.0_header",
+              "authType": "oauth1",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "scheme": "oauth",
+                "type": "http",
+                "x-apifox": {
+                  "in": "header",
+                  "signatureMethod": "HMAC-SHA1",
+                  "includeBodyHash": true,
+                  "addEmptyParamsToSign": true,
+                  "consumerKey": "{{key}}",
+                  "consumerSecret": "{{secret}}",
+                  "enableHeaderEncoding": true
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414504,
+              "name": "secureSchema_HAWK",
+              "authType": "hawk",
+              "oasAuthType": "apiKey",
+              "authConfigs": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "hawkname",
+                "x-apifox": {
+                  "scheme": "hawk",
+                  "algorithm": "sha256",
+                  "includePayloadHash": true
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414505,
+              "name": "secureSchema_AWS",
+              "authType": "awsv4",
+              "oasAuthType": "apiKey",
+              "authConfigs": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "awsName",
+                "x-apifox": {
+                  "scheme": "aws4-hmac-sha256",
+                  "region": "us-set-3",
+                  "service": "s3"
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414506,
+              "name": "secureSchema_kerberos",
+              "authType": "kerberos1",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "type": "http",
+                "scheme": "negotiate",
+                "x-apifox": {
+                  "provider": "Kerberos",
+                  "service": "HTTP/hostname.domain.local@realm.name"
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414507,
+              "name": "secureSchema_NTLM",
+              "authType": "ntlm",
+              "oasAuthType": "http",
+              "authConfigs": {
+                "type": "http",
+                "scheme": "negotiate",
+                "x-apifox": {
+                  "provider": "NTLM",
+                  "domain": "apifox.com",
+                  "workstation": "Apifox-PC",
+                  "disableRetryRequest": true
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414508,
+              "name": "secureSchema_Akamai",
+              "authType": "edgegrid",
+              "oasAuthType": "apiKey",
+              "authConfigs": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "Authorization",
+                "x-apifox": {
+                  "scheme": "eg1-hmac-sha256",
+                  "clientToken": "Client Token",
+                  "clientSecret": "Client Secret"
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414509,
+              "name": "secureSchema_Oauth2_authorizationCode",
+              "authType": "oauth2",
+              "oasAuthType": "oauth2",
+              "authConfigs": {
+                "type": "oauth2",
+                "flows": {
+                  "authorizationCode": {
+                    "authorizationUrl": "{{auth_url}}",
+                    "x-apifox": {
+                      "authRequestParams": [
+                        {
+                          "enabled": true,
+                          "key": "auth_url_q1",
+                          "value": "111",
+                          "send_as": "request_url"
+                        },
+                        {
+                          "enabled": true,
+                          "key": "auth_url_q2",
+                          "value": "222",
+                          "send_as": "request_url"
+                        }
+                      ],
+                      "tokenRequestParams": [
+                        {
+                          "enabled": true,
+                          "key": "q1",
+                          "value": "1",
+                          "send_as": "request_url"
+                        },
+                        {
+                          "enabled": true,
+                          "key": "h1",
+                          "value": "1",
+                          "send_as": "request_header"
+                        },
+                        {
+                          "enabled": true,
+                          "key": "b1",
+                          "value": "1",
+                          "send_as": "request_body"
+                        }
+                      ],
+                      "redirectUri": "{{callback_url}}",
+                      "addTokenTo": "header",
+                      "useTokenType": "access_token",
+                      "challengeAlgorithm": "S256",
+                      "clientAuthentication": "header",
+                      "useTokenConfigAsRefreshTokenConfig": true,
+                      "queryParamKey": "access_token",
+                      "headerPrefix": "Bearer",
+                      "codeVerifier": "{{code_verifier}}",
+                      "state": "{{state}}"
+                    },
+                    "tokenUrl": "{{access_token_url}}",
+                    "scopes": {
+                      "scope1": "desc ofscope1"
+                    }
+                  }
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414510,
+              "name": "secureSchema_Oauth2_clientCredentials",
+              "authType": "oauth2",
+              "oasAuthType": "oauth2",
+              "authConfigs": {
+                "type": "oauth2",
+                "flows": {
+                  "clientCredentials": {
+                    "x-apifox": {
+                      "addTokenTo": "header",
+                      "useTokenType": "access_token",
+                      "clientAuthentication": "header",
+                      "queryParamKey": "access_token",
+                      "headerPrefix": "Bearer",
+                      "state": "{{state}}"
+                    },
+                    "scopes": {
+                      "scope1": "desc of scope1"
+                    },
+                    "tokenUrl": "{{access_token_url}}"
+                  }
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414511,
+              "name": "secureSchema_Oauth2_implicit",
+              "authType": "oauth2",
+              "oasAuthType": "oauth2",
+              "authConfigs": {
+                "type": "oauth2",
+                "flows": {
+                  "implicit": {
+                    "authorizationUrl": "{{auth_url}}",
+                    "x-apifox": {
+                      "redirectUri": "{{callback_url}}",
+                      "addTokenTo": "header",
+                      "useTokenType": "access_token",
+                      "queryParamKey": "access_token",
+                      "headerPrefix": "Bearer",
+                      "state": "{{state}}"
+                    },
+                    "scopes": {
+                      "scope1": "desc of scope1"
+                    }
+                  }
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414512,
+              "name": "secureSchema_Oauth2_password",
+              "authType": "oauth2",
+              "oasAuthType": "oauth2",
+              "authConfigs": {
+                "type": "oauth2",
+                "flows": {
+                  "password": {
+                    "tokenUrl": "{{access_token_url}}",
+                    "scopes": {
+                      "scope1": "desc of scope"
+                    },
+                    "x-apifox": {
+                      "addTokenTo": "header",
+                      "useTokenType": "access_token",
+                      "clientAuthentication": "header",
+                      "useTokenConfigAsRefreshTokenConfig": true,
+                      "queryParamKey": "access_token",
+                      "headerPrefix": "Bearer",
+                      "state": "{{state}}"
+                    }
+                  }
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414513,
+              "name": "secureSchema_customType",
+              "authType": "customize",
+              "oasAuthType": "customType",
+              "authConfigs": {
+                "type": "customType",
+                "in": "header",
+                "name": "key",
+                "x-apifox": {
+                  "additionalField": 111
+                }
+              },
+              "guidanceConfigs": {}
+            },
+            {
+              "id": 414523,
+              "name": "secureSchema_combinedType",
+              "authType": "combination",
+              "oasAuthType": "",
+              "authConfigs": {
+                "group": [
+                  {
+                    "id": 414483
+                  },
+                  {
+                    "id": 414495
+                  },
+                  {
+                    "id": 414497
+                  },
+                  {
+                    "id": 414498
+                  }
+                ]
+              },
+              "guidanceConfigs": {}
+            }
+          ]
+        },
+        {
+          "id": 414483,
+          "name": "secureSchema_APIKey_root1",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_root1_authName"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414484,
+          "name": "secureSchema_APIKey_root2",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_root2_authName"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414485,
+          "name": "secureSchema_APIKey_folder1",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_folder1_authName"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414486,
+          "name": "secureSchema_APIKey_folder2",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_folder2_authName"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414487,
+          "name": "secureSchema_APIKey_api1",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_api1_authName"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414488,
+          "name": "secureSchema_APIKey_api2",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_api2_authName"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414489,
+          "name": "secureSchema_APIKey_duplicateNameTest",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_duplicateNameTest1"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414490,
+          "name": "secureSchema_APIKey_duplicateNameTest",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_duplicateNameTest2"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414492,
+          "name": "secureSchema_APIKey_unused",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "secureSchema_APIKey_unused"
+          },
+          "guidanceConfigs": {}
+        },
+        {
+          "id": 414493,
+          "name": "secureSchema_APIKey_additionalFields",
+          "authType": "apikey",
+          "oasAuthType": "apiKey",
+          "authConfigs": {
+            "type": "apiKey",
+            "in": "header",
+            "name": "keyName",
+            "x-apifox": {
+              "additionalField": 111
+            }
+          },
+          "guidanceConfigs": {}
+        }
+      ]
+    }
+  ],
+  "requestCollection": [
+    {
+      "name": "Root",
+      "children": [],
+      "ordering": [
+        "requestFolder.7310508"
+      ],
+      "items": []
+    }
+  ],
+  "apiTestCaseCollection": [
+    {
+      "name": "Root",
+      "children": [],
+      "items": []
+    }
+  ],
+  "testCaseReferences": [],
+  "environments": [],
+  "commonScripts": [],
+  "databaseConnections": [],
+  "globalVariables": [],
+  "moduleVariables": [
+    {
+      "id": "5917663",
+      "variables": []
+    }
+  ],
+  "commonParameters": null,
+  "projectSetting": {
+    "id": "6906658",
+    "auth": {
+      "type": "securityscheme"
+    },
+    "securityScheme": {
+      "required": true,
+      "schemeGroups": [
+        {
+          "id": "Y2erYwc7rAtoVUzVroot1",
+          "schemeIds": [
+            414483
+          ]
+        },
+        {
+          "id": "KES73xyZ46XYM9Jlroot2",
+          "schemeIds": [
+            414484
+          ]
+        }
+      ],
+      "use": {
+        "id": "KES73xyZ46XYM9Jlroot2",
+        "configs": {
+          "414484": {
+            "authConfigs": {
+              "x-apifox": {
+                "value": "defaultValueFromRoot"
+              }
+            }
+          }
+        }
+      },
+      "scopes": {}
+    },
+    "gateway": [],
+    "language": "en-US",
+    "apiStatuses": [
+      "developing",
+      "testing",
+      "released",
+      "deprecated"
+    ],
+    "mockSettings": {},
+    "preProcessors": [],
+    "postProcessors": [],
+    "advancedSettings": {
+      "enableJsonc": false,
+      "enableBigint": false,
+      "responseValidate": true,
+      "enableTestScenarioSetting": false,
+      "enableYAPICompatScript": false,
+      "isDefaultUrlEncoding": 2,
+      "publishedDocUrlRules": {
+        "defaultRule": "SLUGIFY_WITH_RESOURCE_KEY",
+        "resourceKeyStandard": "NEW"
+      }
+    },
+    "initialDisabledMockIds": [],
+    "servers": [
+      {
+        "id": "default",
+        "name": "Default Server"
+      }
+    ],
+    "cloudMock": {
+      "security": "free",
+      "enable": false,
+      "tokenKey": "apifoxToken"
+    }
+  },
+  "customFunctions": [],
+  "projectAssociations": []
+}
