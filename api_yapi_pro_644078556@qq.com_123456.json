@@ -1,0 +1,574 @@
+[
+  {
+    "index": 0,
+    "name": "登录管理",
+    "desc": "Token Controller",
+    "add_time": 1635227886,
+    "up_time": 1635227886,
+    "list": [
+      {
+        "query_path": {
+          "path": "/healthCheck",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34443,
+        "method": "GET",
+        "title": "healthCheck",
+        "path": "/healthCheck",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [],
+        "req_body_type": "raw",
+        "res_body_type": "raw",
+        "res_body": "OK",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227886,
+        "up_time": 1635227886,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/login",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34449,
+        "method": "POST",
+        "title": "login",
+        "path": "/login",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "617798ee1280001496dab14f",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "req_body_type": "json",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "req_body_other": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"string\"\n    },\n    \"password\": {\n      \"type\": \"string\"\n    },\n    \"username\": {\n      \"type\": \"string\"\n    },\n    \"uuid\": {\n      \"type\": \"string\"\n    }\n  },\n  \"title\": \"LoginBody\",\n  \"$$ref\": \"#/definitions/LoginBody\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227886,
+        "up_time": 1635227886,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/wxLogin",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34503,
+        "method": "GET",
+        "title": "wxLogin",
+        "path": "/wxLogin",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "617798ef12800009d3dab159",
+            "name": "code",
+            "desc": "code"
+          }
+        ],
+        "req_body_type": "raw",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/refresh",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34479,
+        "method": "POST",
+        "title": "刷新令牌",
+        "path": "/refresh",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "617798ef1280007dd7dab153",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "req_body_type": "json",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/forgetThePassword",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34431,
+        "method": "POST",
+        "title": "忘记密码",
+        "path": "/forgetThePassword",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "617798ee128000ae51dab14d",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "req_body_type": "json",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"string\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«string»\",\n  \"$$ref\": \"#/definitions/R«string»\"\n}",
+        "req_body_other": "{\n  \"type\": \"object\",\n  \"required\": [\n    \"code\",\n    \"confirmPasswrod\",\n    \"newPasswrod\",\n    \"phone\"\n  ],\n  \"properties\": {\n    \"code\": {\n      \"type\": \"string\",\n      \"description\": \"验证码\"\n    },\n    \"confirmPasswrod\": {\n      \"type\": \"string\",\n      \"description\": \"确认的密码\"\n    },\n    \"newPasswrod\": {\n      \"type\": \"string\",\n      \"description\": \"新密码\"\n    },\n    \"phone\": {\n      \"type\": \"string\",\n      \"description\": \"手机号码\"\n    }\n  },\n  \"title\": \"订单表\",\n  \"$$ref\": \"#/definitions/订单表\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227886,
+        "up_time": 1635227886,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/forgetTheMsg",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34425,
+        "method": "GET",
+        "title": "忘记密码短信发送",
+        "path": "/forgetTheMsg",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "617798ee1280005e9bdab14c",
+            "name": "phone",
+            "desc": "手机号"
+          }
+        ],
+        "req_body_type": "raw",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"string\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«string»\",\n  \"$$ref\": \"#/definitions/R«string»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227886,
+        "up_time": 1635227886,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/loginMsg",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34455,
+        "method": "GET",
+        "title": "手机登录短信发送",
+        "path": "/loginMsg",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "617798ef128000343ddab150",
+            "name": "phone",
+            "desc": "手机号"
+          }
+        ],
+        "req_body_type": "raw",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"string\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«string»\",\n  \"$$ref\": \"#/definitions/R«string»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/register",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34485,
+        "method": "POST",
+        "title": "注册",
+        "path": "/register",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "617798ef1280005584dab154",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "req_body_type": "json",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "req_body_other": "{\n  \"type\": \"object\",\n  \"required\": [\n    \"code\",\n    \"password\",\n    \"phone\",\n    \"uuid\"\n  ],\n  \"properties\": {\n    \"code\": {\n      \"type\": \"string\",\n      \"description\": \"验证码\"\n    },\n    \"password\": {\n      \"type\": \"string\",\n      \"description\": \"登录密码\"\n    },\n    \"phone\": {\n      \"type\": \"string\",\n      \"description\": \"手机号码\"\n    },\n    \"uuid\": {\n      \"type\": \"string\",\n      \"description\": \"验证码id\"\n    }\n  },\n  \"title\": \"UserRegister\",\n  \"$$ref\": \"#/definitions/UserRegister\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/registerMsg",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34491,
+        "method": "GET",
+        "title": "注册验证码",
+        "path": "/registerMsg",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "617798ef1280005a1cdab155",
+            "name": "phone",
+            "desc": "手机号"
+          }
+        ],
+        "req_body_type": "raw",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"string\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«string»\",\n  \"$$ref\": \"#/definitions/R«string»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/phoneLogin",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34473,
+        "method": "POST",
+        "title": "登录",
+        "path": "/phoneLogin",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "617798ef12800047ecdab152",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "req_body_type": "json",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "req_body_other": "{\n  \"type\": \"object\",\n  \"required\": [\n    \"code\",\n    \"password\",\n    \"phone\",\n    \"uuid\"\n  ],\n  \"properties\": {\n    \"code\": {\n      \"type\": \"string\",\n      \"description\": \"验证码\"\n    },\n    \"password\": {\n      \"type\": \"string\",\n      \"description\": \"登录密码\"\n    },\n    \"phone\": {\n      \"type\": \"string\",\n      \"description\": \"手机号码\"\n    },\n    \"uuid\": {\n      \"type\": \"string\",\n      \"description\": \"验证码id\"\n    }\n  },\n  \"title\": \"UserRegister\",\n  \"$$ref\": \"#/definitions/UserRegister\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/msgLogin",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": true,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34467,
+        "method": "POST",
+        "title": "短信登录",
+        "path": "/msgLogin",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [
+          {
+            "required": "1",
+            "_id": "617798ef1280002a00dab151",
+            "name": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "req_query": [],
+        "req_body_type": "json",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "req_body_other": "{\n  \"type\": \"object\",\n  \"required\": [\n    \"code\",\n    \"password\",\n    \"phone\",\n    \"uuid\"\n  ],\n  \"properties\": {\n    \"code\": {\n      \"type\": \"string\",\n      \"description\": \"验证码\"\n    },\n    \"password\": {\n      \"type\": \"string\",\n      \"description\": \"登录密码\"\n    },\n    \"phone\": {\n      \"type\": \"string\",\n      \"description\": \"手机号码\"\n    },\n    \"uuid\": {\n      \"type\": \"string\",\n      \"description\": \"验证码id\"\n    }\n  },\n  \"title\": \"UserRegister\",\n  \"$$ref\": \"#/definitions/UserRegister\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/getMsg",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34437,
+        "method": "GET",
+        "title": "获取手机验证码",
+        "path": "/getMsg",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "617798ee128000adf0dab14e",
+            "name": "phone",
+            "desc": "手机号"
+          }
+        ],
+        "req_body_type": "raw",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227886,
+        "up_time": 1635227886,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/setMsgCode",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": false,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34497,
+        "method": "GET",
+        "title": "设置短信验证码",
+        "path": "/setMsgCode",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [
+          {
+            "required": "1",
+            "_id": "617798ef1280005f1fdab158",
+            "name": "code",
+            "desc": "验证码"
+          },
+          {
+            "required": "1",
+            "_id": "617798ef1280000f2bdab157",
+            "name": "phone",
+            "desc": "手机号"
+          },
+          {
+            "required": "1",
+            "_id": "617798ef128000d9f4dab156",
+            "name": "type",
+            "desc": "验证类型"
+          }
+        ],
+        "req_body_type": "raw",
+        "res_body_type": "raw",
+        "res_body": "OK",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      },
+      {
+        "query_path": {
+          "path": "/logout",
+          "params": []
+        },
+        "edit_uid": 0,
+        "status": "undone",
+        "type": "static",
+        "req_body_is_json_schema": false,
+        "res_body_is_json_schema": true,
+        "api_opened": false,
+        "index": 0,
+        "tag": [
+          "登录管理"
+        ],
+        "_id": 34461,
+        "method": "DELETE",
+        "title": "退出",
+        "path": "/logout",
+        "req_params": [],
+        "req_body_form": [],
+        "req_headers": [],
+        "req_query": [],
+        "req_body_type": "raw",
+        "res_body_type": "json",
+        "res_body": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"code\": {\n      \"type\": \"integer\",\n      \"format\": \"int32\",\n      \"description\": \"状态码\"\n    },\n    \"data\": {\n      \"type\": \"object\",\n      \"description\": \"数据\"\n    },\n    \"msg\": {\n      \"type\": \"string\",\n      \"description\": \"消息体\"\n    }\n  },\n  \"title\": \"R«object»\",\n  \"$$ref\": \"#/definitions/R«object»\"\n}",
+        "project_id": 1227,
+        "catid": 4704,
+        "uid": 1251,
+        "add_time": 1635227887,
+        "up_time": 1635227887,
+        "__v": 0
+      }
+    ]
+  }
+]
