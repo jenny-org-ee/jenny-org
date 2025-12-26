@@ -1,0 +1,142 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "pet-TUANDUI-github",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "folder1"
+    },
+    {
+      "name": "folder2"
+    }
+  ],
+  "paths": {
+    "/endpoint/overwrite-test": {
+      "get": {
+        "summary": "Overwrite test for existing data (no security field)",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "folder1"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/endpoint/create-test": {
+      "get": {
+        "summary": "New folder test (no security field)",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "folder2"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/endpoint/no-auth": {
+      "get": {
+        "summary": "No authentication required (security: [])",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/endpoint/inherit-global": {
+      "get": {
+        "summary": "Inherit global security (no security field)",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {}
+          }
+        },
+        "security": []
+      }
+    },
+    "/endpoint/with-security-component": {
+      "get": {
+        "summary": "Use security component (security: [{ petstore_auth: [] }])",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {}
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": []
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Pet": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "x-apifox-orders": [
+          "id",
+          "name"
+        ]
+      }
+    },
+    "responses": {},
+    "securitySchemes": {
+      "petstore_auth": {
+        "type": "oauth2",
+        "flows": {
+          "implicit": {
+            "authorizationUrl": "https://example.com/api/oauth/dialog",
+            "scopes": {
+              "write:pets": "modify pets in your account",
+              "read:pets": "read your pets"
+            }
+          }
+        }
+      }
+    }
+  },
+  "servers": [],
+  "security": []
+}
