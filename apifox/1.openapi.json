@@ -114,7 +114,11 @@
           "name": {
             "type": "string"
           }
-        }
+        },
+        "x-apifox-orders": [
+          "id",
+          "name"
+        ]
       }
     },
     "responses": {},
