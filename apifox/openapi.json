@@ -14,7 +14,7 @@
     }
   ],
   "paths": {
-    "/endpoint/overwrite-test": {
+    "/endpoint/overwrite-test/xxx": {
       "get": {
         "summary": "Overwrite test for existing data (no security field)",
         "deprecated": false,
@@ -32,7 +32,7 @@
         "security": []
       }
     },
-    "/endpoint/create-test": {
+    "/endpoint/create-test/yyy": {
       "get": {
         "summary": "New folder test (no security field)",
         "deprecated": false,
