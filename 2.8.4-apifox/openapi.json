@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Pet Store",
+    "title": "Pet Store-github",
     "description": "Manage pet, order, purchase, user, and other pet store business operations.",
     "version": "1.0.0"
   },
