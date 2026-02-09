@@ -1112,6 +1112,47 @@
         },
         "security": []
       }
+    },
+    "/aa": {
+      "get": {
+        "summary": "aa",
+        "deprecated": false,
+        "description": "",
+        "tags": [],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "aa": {
+                      "type": "string",
+                      "description": "899"
+                    },
+                    "xx": {
+                      "type": "string",
+                      "title": "",
+                      "description": "漱口水"
+                    }
+                  },
+                  "required": [
+                    "aa",
+                    "xx"
+                  ]
+                },
+                "example": {
+                  "aa": "5577"
+                }
+              }
+            },
+            "headers": {}
+          }
+        },
+        "security": []
+      }
     }
   },
   "components": {
