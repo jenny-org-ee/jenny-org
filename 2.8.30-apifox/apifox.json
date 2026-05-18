@@ -632,14 +632,15 @@
     {
       "_databaseId": 9151155,
       "updatedAt": "2026-05-15T10:04:40.000Z",
+      "id": 9151155,
       "name": "根目录",
       "type": "root",
       "children": [],
       "moduleId": 7754766,
       "parentId": 0,
-      "id": 9151155,
       "items": [
         {
+          "id": 342107618,
           "name": "BadRequest",
           "moduleId": 7754766,
           "contentType": "json",
@@ -684,7 +685,6 @@
           },
           "defaultEnable": false,
           "folderId": 0,
-          "id": 342107618,
           "databaseResponseExamples": [
             {
               "id": 31590531,
@@ -720,6 +720,7 @@
           ]
         },
         {
+          "id": 342107620,
           "name": "Forbidden",
           "moduleId": 7754766,
           "contentType": "json",
@@ -764,7 +765,6 @@
           },
           "defaultEnable": false,
           "folderId": 0,
-          "id": 342107620,
           "databaseResponseExamples": [
             {
               "id": 31590533,
@@ -800,6 +800,7 @@
           ]
         },
         {
+          "id": 342107621,
           "name": "NotFound",
           "moduleId": 7754766,
           "contentType": "json",
@@ -844,7 +845,6 @@
           },
           "defaultEnable": false,
           "folderId": 0,
-          "id": 342107621,
           "databaseResponseExamples": [
             {
               "id": 31590534,
@@ -880,6 +880,7 @@
           ]
         },
         {
+          "id": 342107622,
           "name": "TooManyRequests",
           "moduleId": 7754766,
           "contentType": "json",
@@ -924,7 +925,6 @@
           },
           "defaultEnable": false,
           "folderId": 0,
-          "id": 342107622,
           "databaseResponseExamples": [
             {
               "id": 31590535,
@@ -960,6 +960,7 @@
           ]
         },
         {
+          "id": 342107623,
           "name": "InternalServerError",
           "moduleId": 7754766,
           "contentType": "json",
@@ -1004,7 +1005,6 @@
           },
           "defaultEnable": false,
           "folderId": 0,
-          "id": 342107623,
           "databaseResponseExamples": [
             {
               "id": 31590536,
@@ -1536,8 +1536,6 @@
               "items": [
                 {
                   "id": 4953448,
-                  "createdAt": "2026-05-15T10:00:02.000Z",
-                  "updatedAt": "2026-05-15T10:00:34.000Z",
                   "name": "1",
                   "method": "get",
                   "path": "1",
@@ -1556,6 +1554,8 @@
                   "auth": {},
                   "advancedSettings": {},
                   "folderId": 8917923,
+                  "createdAt": "2026-05-15T10:00:02.000Z",
+                  "updatedAt": "2026-05-15T10:00:34.000Z",
                   "projectId": 8277429,
                   "creatorId": 1134871,
                   "editorId": 1134871
@@ -1566,8 +1566,6 @@
           "items": [
             {
               "id": 4953455,
-              "createdAt": "2026-05-15T10:00:37.000Z",
-              "updatedAt": "2026-05-15T10:00:37.000Z",
               "name": "1",
               "method": "get",
               "path": "1",
@@ -1586,6 +1584,8 @@
               "auth": {},
               "advancedSettings": {},
               "folderId": 8917927,
+              "createdAt": "2026-05-15T10:00:37.000Z",
+              "updatedAt": "2026-05-15T10:00:37.000Z",
               "projectId": 8277429,
               "creatorId": 1134871,
               "editorId": 1134871
