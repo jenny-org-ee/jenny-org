@@ -2782,11 +2782,18 @@
       "description": "管理宠物、订单、购买、用户等宠物店业务操作。",
       "moduleVariables": [],
       "openApiInfo": {
-        "version": "999",
+        "version": "9.9.9",
         "license": {
-          "name": "123"
+          "name": "123",
+          "url": "http://www.baidu.com"
         },
-        "termsOfService": "http://www.baidu.com"
+        "termsOfService": "http://www.baidu.com",
+        "summary": "总结信息",
+        "contact": {
+          "name": "name",
+          "email": "jenny@apifox.com",
+          "url": "http://www.baidu.com"
+        }
       }
     }
   ]
